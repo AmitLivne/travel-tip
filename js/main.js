@@ -2,9 +2,9 @@ import locService from './services/loc.service.js';
 import mapService from './services/map.service.js';
 import weatherService from './services/weather.service.js';
 
-var gLat;
-var gLng;
-var isSentLoc;
+let gLat;
+let gLng;
+let isSentLoc;
 
 window.onload = () => {
   let givenLat = getParameterByName('lat');
@@ -38,20 +38,14 @@ document.querySelector('.btn-copy-location').addEventListener('click', () => {
   var url = window.location.href;
   if (!isSentLoc) {
     var urlWithMyLoc = `${url}?lat=${gLat}&lng=${gLng}`;
-    // document.querySelector('input[type="text"]').value = urlWithMyLoc;
     textArea.value = urlWithMyLoc;
   } else {
-    // document.querySelector('input[type="text"]').value = url;
     textArea.value = url;
   }
   document.body.appendChild(textArea);
-  // textArea.focus();
   textArea.select();
   document.execCommand('copy');
   document.body.removeChild(textArea);
-  // var elMyLoc = document.querySelector('input[type="text"]');
-  // elMyLoc.select();
-  // document.execCommand('Copy');
   swal('Copied to the clipboard!');
 });
 

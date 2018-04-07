@@ -1,11 +1,11 @@
 import { GoogleMapsApi } from './gmap.class.js';
 
-var map;
-var marker;
+let map;
+let marker;
 
 function initMap(lat, lng) {
   console.log('InitMap');
-  const gmapApi = new GoogleMapsApi();
+  let gmapApi = new GoogleMapsApi();
   return gmapApi.load().then(() => {
     map = new google.maps.Map(document.querySelector('#map'), {
       center: { lat, lng },
@@ -15,7 +15,7 @@ function initMap(lat, lng) {
   });
 }
 function addMarker(loc) {
-  var icon = {
+  let icon = {
     url: '../img/cartman.png',
     scaledSize: new google.maps.Size(35, 35)
   };
