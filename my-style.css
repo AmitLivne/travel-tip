@@ -208,7 +208,10 @@ button {
         font-size: 1.2em;
         display: none;
     }
-
+    i.my-location {
+        padding-right: 3px;
+    }
+    
     .weather-container {
         background-image: none;
         align-items: unset;
@@ -225,9 +228,6 @@ button {
         display: none;
     }
 
-    i {
-        font-size: 10px;
-    }
     i.my-location {
         display: inline-block;
     }
