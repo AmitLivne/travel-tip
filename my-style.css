@@ -132,6 +132,8 @@ i {
 
 i.my-location {
     display: none;
+    margin-right: 3px;
+    margin-left: 1px;
 }
 .weather-icon {
     margin-right: 5px;
@@ -221,9 +223,14 @@ button {
     p.my-location {
         display: none;
     }
+    
+    i {
+        font-size: 14px;
+    }
 
     i.my-location {
         display: inline-block;
+        margin-left: 0.5px;
     }
 
     form {
@@ -254,9 +261,8 @@ button {
         align-items: unset;
     }
 
-    form, .btn-my-location {
+    .go-to-location {
         margin-bottom: 10px;
-        /* align-items: unset; */
     }
 
     .weather-container {
