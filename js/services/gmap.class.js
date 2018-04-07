@@ -8,7 +8,7 @@ export class GoogleMapsApi {
   constructor() {
     // api key for google maps
     this.apiKey = "";
-    // this.apiKey = 'XAIzaSyCaQVlcIeYewnFSmm3xkL2d3HHy9xhYbz4X';
+    this.apiKey = 'AIzaSyCljstpPo6-o--C9R5HfUvl49-vHulxCGA';
 
     // set a globally scoped callback if it doesn't already exist
     if (!window._GoogleMapsApi) {
