@@ -132,9 +132,10 @@ i {
 
 i.my-location {
     display: none;
-    margin-right: 3px;
-    margin-left: 1px;
+    padding-right: 3px;
+    padding-left: 1px;
 }
+
 .weather-icon {
     margin-right: 5px;
 }
@@ -223,14 +224,12 @@ button {
     p.my-location {
         display: none;
     }
-    
-    i {
-        font-size: 14px;
-    }
 
+    i {
+        font-size: 10px;
+    }
     i.my-location {
         display: inline-block;
-        margin-left: 0.5px;
     }
 
     form {
