@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+}
+/*------Fonts------*/
+
+/*------FontAwesome------*/
+
+@font-face {
+    font-family: 'FontAwesomeSolid';
+    src: url('fonts/font-awesome/ver 5/fa-solid-900.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*------GoogleFonts------*/
+
+@font-face {
+    font-family: 'Fredoka One';
+    src: url('fonts/google-fonts/FredokaOne-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/google-fonts/Roboto-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* helpers */
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+.space-between {
+    justify-content: space-between;
+}
+
+.column {
+    flex-direction: column;
+}
+
+html {
+    background-color: #232F4F;
+    color :#DFE5E8;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;  
+}
+
+header {
+    background-color: #02123B;
+
+}
+h1 {
+    margin: 15px 0;
+}
+
+.logo {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.8em;
+}
+
+.container {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+.my-location-area {
+    padding: 20px 0;
+}
+
+h2 {
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+p {
+    display: inline-block;
+    margin: 0;
+}
+
+.weather-container {
+    padding: 20px 30px;
+    background-image: radial-gradient(circle, #ffffff, #d4d4db, #aaaab8, #818297, #595d77);
+    color: #02123B;
+    margin-right: 10px;
+}
+
+.weather-info {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.location {
+    font-size: 22px;
+}
+
+form {
+    margin-right: 20px;
+}
+
+input {
+    padding: 10px;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+i {
+    font-family: 'FontAwesomeSolid';
+}
+
+i.my-location {
+    display: none;
+}
+.weather-icon {
+    margin-right: 5px;
+}
+
+.temp {
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+#map {
+    max-width: 100%;
+    width: 75%;
+    height: 400px;
+}
+
+
+@media only screen and (max-width: 992px) {
+
+    .map-weater-area {
+        flex-direction: column;
+    }
+    #map {
+        width: 100%;
+        height: 360px;
+    }
+
+    .weather-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 20px;
+        padding: 0;
+        width: 50%
+    }
+    
+    .weather-info {
+        padding: 10px 10px 10px 10px;
+    } 
+
+    h2 {
+    margin-bottom: 0;
+    }
+
+}
+
+@media only screen and (max-width: 740px) {
+
+    #map {
+        width: 100%;
+        height: 380px;
+    }
+    p {
+        display: none;
+    }
+
+    h2 {
+        font-size: 1.3em;
+        display: none;
+    }
+
+    .weather-container {
+        background-image: none;
+        align-items: unset;
+        justify-content: unset;
+        padding: 0;
+    }
+    
+    .weather-info {
+        background-image: radial-gradient(circle, #ffffff, #d4d4db, #aaaab8, #818297, #595d77);
+        padding: 10px 10px 10px 10px;
+    }
+
+    p.my-location {
+        display: none;
+    }
+
+    i.my-location {
+        display: inline-block;
+    }
+
+    form {
+        margin-right: 10px;
+    }
+
+    .logo {
+        font-size: 2.4em;
+        margin-right: 10px;
+    }
+}

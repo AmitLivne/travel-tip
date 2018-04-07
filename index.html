@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="my-style.css">
+    <title>TravelTip</title>
+</head>
+
+<body>
+    <header>
+        <div class="container flex space-between align-center">
+            <h1 class="logo">TravelTip</h1>
+            <div class="go-to-location flex space-between align-center">
+                <form class="flex justify-center" onsubmit="return false">
+                    <input autofocus class="hidden" id="search" type="search" name="search" placeholder="Enter location" hidden>
+                    <button class="hidden btn search-btn" type="submit" hidden>
+                        <i></i>
+                    </button>
+                </form>
+                <button class="hidden btn btn-my-location" hidden>
+                    <p class="my-location">My Location</p>
+                    <i class="my-location"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="container flex column justify-center">
+        <div class="my-location-area flex space-between align-center">
+            <div class="hidden location" hidden>
+                <p>Location is:</p>
+                <span></span>
+            </div>
+            <button class="hidden btn btn-copy-location" hidden>Copy Location</button>
+        </div>
+        <div class="map-weater-area flex space-between">
+            <div>
+                <div class="hidden weather-container" hidden>
+                    <h2>Weather today:</h2>
+                    <div class="weather-info flex space-around">
+                        <img class="weather-icon">
+                        <div class="flex column space-around">
+                            <div class="temp"></div>
+                            <div class="weather-desc"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="map">
+            </div>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+
+</body>
+
+</html>
