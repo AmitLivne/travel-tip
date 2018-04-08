@@ -3,7 +3,7 @@ function getWeather(lat, lng) {
   console.log('Getting Weather');
     return axios
     .get(
-      `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&APPID=5e547392a4decdc01b806a3c35f5746c`
+      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&APPID=5e547392a4decdc01b806a3c35f5746c`
     )
   }
 
