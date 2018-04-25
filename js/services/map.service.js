@@ -16,8 +16,8 @@ function initMap(lat, lng) {
 }
 function addMarker(loc) {
   let icon = {
-    url: '../img/cartman.png',
-    scaledSize: new google.maps.Size(35, 35)
+    url: 'http://icons.iconarchive.com/icons/sykonist/south-park/256/Cartman-normal-icon.png',
+    scaledSize: new google.maps.Size(40, 40)
   };
 
   marker = new google.maps.Marker({
